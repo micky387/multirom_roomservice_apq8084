@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Work in progress for oreo-->
+<manifest>
+	<remote  name="MR"
+             fetch="https://github.com/multirom-dev" />
+    <remote fetch="https://github.com/LineageOS" 
+             name="lineageos" />
+    <remote fetch="https://github.com/micky387" 
+             name="micky387" />
+    <remote fetch="https://github.com/vasishath" 
+             name="vasishath" />
+
+	<remove-project name="android_bootable_recovery" />
+	<remove-project name="TeamWin/android_external_busybox" remote="github" revision="android-8.0"/>
+	<project name="multirom_bootable_recovery" path="bootable/recovery" remote="micky387" revision="android-8.1" />
+	<project name="TeamWin/android_device_qcom_common" path="device/qcom/common" remote="github" revision="android-8.0" />
+	<project name="omnirom/android_external_busybox" path="external/busybox" remote="github" revision="android-8.1" />
+	
+	<project name="libbootimg" path="system/extras/libbootimg" remote="MR" revision="master" />
+	<project name="multirom_core" path="system/extras/multirom" remote="micky387" revision="android-8.1" />
+	<project name="kexec-tools" path="system/extras/multirom/kexec-tools" remote="micky387" revision="master" />
+	<project name="adbd" path="system/extras/multirom/adbd" remote="vasishath" revision="master" />
+
+	<project name="multirom_android_device_tblte" path="device/samsung/tblte" remote="micky387" revision="mr-oreo" />
+	<project name="LineageOS/android_kernel_samsung_apq8084" path="kernel/samsung/apq8084" remote="github" revision="cm-14.1" />
+  
+</manifest>
